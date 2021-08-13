@@ -1,0 +1,28 @@
+{
+  "name": "guia-hoteles",
+  "version": "1.0.0",
+  "description": "Proyecto NodeJS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipancaldo/guia-hoteles.git"
+  },
+  "author": "Ignacio Pancaldo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipancaldo/guia-hoteles/issues"
+  },
+  "homepage": "https://github.com/ipancaldo/guia-hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
