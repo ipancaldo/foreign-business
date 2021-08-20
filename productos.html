@@ -28,10 +28,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item active"><a class="nav-link" href="productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
       </ul>
     </div>
   </nav>
@@ -49,71 +51,10 @@
   <div class="container">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item active" aria-current="page">Home</li>
+        <li class="breadcrumb-item" aria-current="page"><a href="./index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Productos</li>
       </ol>
     </nav>
-  </div>
-
-  <div class="row">
-    <div class="row mt-4">
-      <!--Recuadro parte izquierda-->
-      <div class="col-xl-6 col-lg-6 col-xs-12 p-5">
-        <!--Recuadro parte izquierda GOLOSINAS-->
-        <div class="list-group">
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Caramelos masticables</h5>
-            </div>
-            <p class="mb-1">Caramelos masticables de todos los sabores</p>
-            <div div="bg-light">
-              <button type="button" class="btn btn-info float-end">Más</button>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Caramelos duros</h5>
-            </div>
-            <p class="mb-1">Caramelos duros sabores frutales y menta</p>
-            <div>
-              <button type="button" class="btn btn-info float-end">Más</button>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Chupetines y paletas</h5>
-            </div>
-            <p class="mb-1">Nuevo stock disponible!</p>
-            <div>
-              <button type="button" class="btn btn-info float-end">Más</button>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Chocolates</h5>
-            </div>
-            <p class="mb-1">Chocolates variados</p>
-            <div>
-              <button type="button" class="btn btn-info float-end">Más</button>
-            </div>
-          </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h5 class="mb-1">Bombillas</h5>
-            </div>
-            <p class="mb-1">De alpaca y plata</p>
-            <div>
-              <button type="button" class="btn btn-info float-end">Más</button>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!--Recuadro parte derecha de imagen-->
-      <div class="col-xl-6 col-lg-6 col-xs-12 p-2 justify-content-center imagen">
-        <div class="row">
-          <img class="img-fluid" src="images/home-products.png" />
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Tarjetas -->
