@@ -2,6 +2,10 @@ body{
     background-color: #264f77;;
 }
 
+.jumbotron{
+    margin-top: 60px;
+}
+
 .imagen{
     display: flex;
     align-items: center;
