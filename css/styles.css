@@ -2,6 +2,10 @@ body{
     background-color: #264f77;;
 }
 
+.logo-banner{
+    width: 100px;
+}
+
 .jumbotron{
     margin-top: 60px;
 }
