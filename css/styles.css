@@ -21,6 +21,11 @@ body{
     margin: 3px 9px 10px 5px;
     padding: 10px;
     border-radius: 10px;
+    max-width: 400px;
+}
+
+.card-marcas-img{
+    max-width: 400px;
 }
 
 .card-background{
