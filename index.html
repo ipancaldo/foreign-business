@@ -36,7 +36,9 @@
     </div>
     <a href="" class="btn btn-danger text-white badge-pill mr-2" data-toggle="modal"
       data-target="#registrate">REGISTRATE</a>
-    <button type="button" class="btn btn-primary">Notificaciones <span class="badge badge-pill btn-danger">1</span>
+    <!-- TOOTLIP -->
+    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+      title="Tienes una nueva notificación">Notificaciones <span class="badge badge-pill btn-danger">1</span>
     </button>
   </nav>
 
@@ -124,7 +126,9 @@
             </div>
             <p class="mb-1">Caramelos masticables de todos los sabores</p>
             <div div="bg-light">
-              <button type="button" class="btn btn-info float-end">Más</button>
+              <!-- POPOVER -->
+              <button type="button" class="btn btn-info float-end" data-toggle="popover" title="Atención"
+                data-content="Segmento en construcción">Más</button>
             </div>
           </a>
           <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
@@ -238,7 +242,9 @@
           <h3><span class="badge badge-secondary">Nuevo!</span></h3>
           <img class="card-img-top card-marcas-img" src="images/Marcas/Trams.png" class="imagen-marca"
             alt="Card image cap">
-          <h5 class="card-title">Tram's</h5>
+          <!-- TOOLTIP -->
+          <h5 class="card-title" data-toggle="tooltip" data-placement="top"
+            title="Empresa brasilera de productos de primera calidad">Tram's</h5>
           <p class="card-text">Empresa brasilera dedicada a la producción de golosinas.</p>
         </div>
         <div class="pt-2">
@@ -382,6 +388,16 @@
   <!-- <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+
+
+  <!-- TOOLTIP -->
+  <!-- POPOVER -->
+  <script>
+    $(function () {
+      $("[data-toggle='tooltip']").tooltip();
+      $("[data-toggle='popover']").popover();
+    });
+  </script>
 </body>
 
 </html>
