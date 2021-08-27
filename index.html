@@ -65,6 +65,36 @@
     <img src="images/plane-trucks-are-flying.jpg" class="img-fluid" alt="Imagen de un chocolate">
   </section>
 
+  <!-- Carousel -->
+  <section class="container-fluid mt-3 mb-3">
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Masticables/masticable_YogurtFrutilla250gr.png" alt="Caramelo masticable sabor frutilla"
+            class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Masticables/masticables_AlgodonDulce100gr.png"
+            alt="Caramelo masticable sabor algodón dulce" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Masticables/masticables_Banana.png" alt="Caramelo masticable sabor banana"
+            class="d-block w-100">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- Accordion NO FUNCIONAL -->
   <div class="accordion accordion-flush" id="accordionFlushExample">
     <div class="accordion-item">
       <h2 class="accordion-header" id="flush-headingOne">
@@ -396,6 +426,9 @@
     $(function () {
       $("[data-toggle='tooltip']").tooltip();
       $("[data-toggle='popover']").popover();
+      $('.carousel'.carousel)({
+        interval: 2000
+      })
     });
   </script>
 </body>

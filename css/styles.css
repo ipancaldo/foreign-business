@@ -10,6 +10,16 @@ body{
     margin-top: 60px;
 }
 
+.w-100 {
+    /* width: 50% !important;*/
+    margin: auto;
+    width: auto !important;
+    height: 500px;
+    max-height: 500px;
+    /*height: 7vh; */
+  }
+
+
 .imagen{
     display: flex;
     align-items: center;
