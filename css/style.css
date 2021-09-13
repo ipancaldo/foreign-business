@@ -5,10 +5,6 @@ body {
   width: 100px; }
 
 .jumbotron {
-  margin-top: 60px;
-  margin-right: 0px;
-  margin-bottom: 10px;
-  margin-left: 0px;
   margin-top: 60px; }
 
 .w-100 {
@@ -26,10 +22,7 @@ body {
 
 .card-marcas {
   flex: 1 150px;
-  margin-top: 3px;
-  margin-right: 9px;
-  margin-bottom: 10px;
-  margin-left: 5px;
+  margin: 3px 9px 10px 5px;
   padding: 10px;
   border-radius: 10px;
   max-width: 400px; }
@@ -38,7 +31,7 @@ body {
   max-width: 400px; }
 
 .card-background {
-  background: #ffffff; }
+  background: F7D59C; }
 
 .imagen-marca {
   width: 100% !important;

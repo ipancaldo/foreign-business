@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Iconos -->
@@ -34,8 +35,8 @@
         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
     </div>
-    <a href="" class="btn btn-danger text-white badge-pill mr-2" data-toggle="modal"
-      data-target="#registrate">REGISTRATE</a>
+    <a href="" class="btn btn-danger text-white badge-pill mr-2" data-toggle="modal" data-target="#registrate"
+      id="registrateBtn">REGISTRATE</a>
     <!-- TOOTLIP -->
     <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
       title="Tienes una nueva notificación">Notificaciones <span class="badge badge-pill btn-danger">1</span>
@@ -428,7 +429,22 @@
       $("[data-toggle='popover']").popover();
       $('.carousel'.carousel)({
         interval: 2000
-      })
+      });
+      // ON PARA SUBSCRIBIRSE AL EVENTO '' (en este caso: show.bs.modal)
+      $('#registrateBtn').on('show.bs.modal', function (e) {
+        $('#registrateBtn').removeClass('btn-danger');
+        $('#registrateBtn').addClass('btn-primary');
+        $('#registrateBtn').prop('disabled', true);
+      });
+      $('#registrateBtn').on('shown.bs.modal', function (e) {
+        console.log('El modal se mostró');
+      });
+      $('#registrateBtn').on('hide.bs.modal', function (e) {
+        console.log('El modal se está ocultando');
+      });
+      $('#registrateBtn').on('hidden.bs.modal', function (e) {
+        console.log('El modal se ocultó');
+      });
     });
   </script>
 </body>

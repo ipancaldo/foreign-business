@@ -1,0 +1,60 @@
+$white: #ffffff;
+
+@mixin margenes($top, $right, $bottom, $left){
+	margin-top: $top;
+    margin-right: $right;
+	margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+body{
+    background-color: #264f77;;
+}
+
+.logo-banner{
+    width: 100px;
+}
+
+.jumbotron{
+    @include margenes(60px, 0px, 10px, 0px);
+    margin-top: 60px;
+}
+
+.w-100 {
+    /* width: 50% !important;*/
+    margin: auto;
+    width: auto !important;
+    height: 500px;
+    max-height: 500px;
+    /*height: 7vh; */
+  }
+
+
+.imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-marcas{
+    flex: 1 150px;
+    @include margenes(3px, 9px, 10px, 5px);
+    // margin: 3px 9px 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.card-marcas-img{
+    max-width: 400px;
+}
+
+.card-background{
+    background: $white;
+}
+
+.imagen-marca{
+    width:100% !important;
+    max-width: 5px !important;
+}
+
